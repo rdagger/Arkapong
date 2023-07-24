@@ -8,6 +8,8 @@ I created this game specifically for my vintage cocktail table arcade machine.  
 
 Player paddles are controlled using mouse motion.  The game supports both one-on-one matches between two players and single-player mode against the computer.  For Player 1, I'm utilizing the X-axis of a Turbo Twist spinner, while Player 2 uses the Y-axis. Single-player games can also be played with a regular mouse. You can easily switch between relative motion and actual mouse position depending on your input device.
 
+The default player 1 & 2 button key is Left CTRL and A respectively.  See pygame_keys.txt in the utils folder for the key constants to modify the buttons in settings.ini.
+
 Score points by destroying bricks with your ball. Silver bricks need two hits, and gold bricks are unbreakable. Earn points by defeating enemies with the ball or your paddle. Hitting the ball past your opponent's goal reduces their lives and earns you more points.
 
 Collect power-ups to enhance your gameplay. They include extra balls, ball-catching ability, ball speed control, paddle size adjustments, goal forcefields, extra players, and level upgrades.
