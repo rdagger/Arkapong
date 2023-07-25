@@ -144,6 +144,19 @@ class Board:
         """
         self.border.draw(screen)
 
+    def draw_fps(self, screen, clock):
+        """Draw the frame frate (FPS)
+
+        Args:
+            screen(pygame.Surface): Graphical window to display graphics.
+            clock(pygame.time.Clock): Game clock
+        """
+        fps_text = f"FPS: {int(clock.get_fps())}"
+        _, fps_height = self.fonts.measure(fps_text, Size.SMALL)
+        fps_pos = (self.center[0], self.screen_height - fps_height)
+        self.fonts.draw(fps_text, Size.SMALL, fps_pos, screen,
+                        Color("Yellow"), center=False)
+
     def draw_score(self, scores, screen):
         """Display the player's score.
 

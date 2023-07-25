@@ -38,6 +38,7 @@ class Game:
         lives = config.getint('GameSettings', 'lives')
         difficulty = config.getint('GameSettings', 'computer_difficulty')
         self.mouse_rel = config.getboolean('GameSettings', 'mouse_relative')
+        self.show_fps = config.getboolean('GameSettings', 'frame_rate')
 
         # Get keyboard input keys for each player
         self.input_keys = {}
@@ -248,6 +249,8 @@ class Game:
         self.bricks.draw(self.screen)
         self.powerups.draw(self.screen)
         self.enemies.draw(self.screen)
+        if self.show_fps:
+            self.board.draw_fps(self.screen, self.clock)
 
     def reset(self):
         """Reset players, balls and power-ups."""
