@@ -1,5 +1,5 @@
 # Arkapong
-A PyGame mashup of ping pong and brick-breaker arcade games.
+A Pygame mashup of ping pong and brick-breaker arcade games.
 
 ![Arkapong04](https://github.com/rdagger/Arkapong/assets/106355/ea16495d-2545-485e-86ad-59224c58341f)
 
