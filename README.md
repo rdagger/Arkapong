@@ -16,6 +16,6 @@ Collect power-ups to enhance your gameplay. They include extra balls, ball-catch
 
 The game ends when one player loses all their lives.
 
-The game currently offers 39 levels. I designed these levels using an Excel spreadsheet, which you can find in the utils folder. The good news is that you can expand the game by adding more levels. There's a handy utility called parse_excel_levels.py that converts Excel designs into Python code, which can then be inserted into the levels.py folder to seamlessly integrate new levels.
+The game currently offers 39 levels. I designed these levels using an Excel spreadsheet, which you can find in the utils folder. The good news is that you can expand the game by adding more levels. There's a handy utility called parse_excel_levels.py that converts Excel designs into Python code, which can then be inserted into the levels.py file to seamlessly integrate new levels.
 
 ![Levels 1-39](https://github.com/rdagger/Arkapong/assets/106355/af29d94e-c3d9-4f68-82d5-0ca37fc87c21)
