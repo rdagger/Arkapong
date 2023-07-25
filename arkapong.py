@@ -16,7 +16,7 @@ from random import choice, random
 from sys import exit, modules
 
 BRICK_VALUE = 25
-ENEMY_VALUE = 175
+ENEMY_VALUE = 125
 GOAL_VALUE = 200
 LEVEL_UP_VALUE = 150
 
@@ -360,6 +360,7 @@ class Game:
                 # Check brick count
                 if not self.bricks.brick_count():
                     # Next level achieved
+                    self.scores[ball.current_player] += LEVEL_UP_VALUE
                     self.next_level()
                     break
 
